@@ -469,6 +469,43 @@ with right:
     st.plotly_chart(fig, use_container_width=True)
 
 
+# -------------------- Restaurant distribution --------------------
+
+st.subheader("🍴 Restaurant Distribution")
+
+distribution_type = st.selectbox(
+    "Analyse distribution by",
+    options=["Location", "Restaurant Type", "Cuisine"],
+    key="distribution_type",
+)
+
+distribution_data = (
+    filtered[distribution_type]
+    .fillna("Not listed")
+    .value_counts()
+    .head(15)
+    .rename_axis(distribution_type)
+    .reset_index(name="Places")
+    .sort_values("Places", ascending=True)
+)
+
+fig = px.bar(
+    distribution_data,
+    x="Places",
+    y=distribution_type,
+    orientation="h",
+    text="Places",
+    title=f"Top 15 Places by {distribution_type}",
+    labels={"Places": "Number of mapped places"},
+)
+
+fig.update_layout(
+    yaxis_title="",
+    xaxis_title="Number of mapped places",
+)
+
+st.plotly_chart(fig, use_container_width=True)
+
 # -------------------- Data quality --------------------
 
 st.subheader("🧹 Data Quality")
@@ -617,11 +654,13 @@ if not map_data.empty:
                 st.write(f"Website: {website}")
             else:
                 st.write("Website: Not listed")
-
-            st.write(
-                f"Coordinates: {place['Latitude']:.5f}, "
-                f"{place['Longitude']:.5f}"
+            maps_url = (
+                "https://www.google.com/maps/search/?api=1&query="
+                f"{place['Latitude']},{place['Longitude']}"
             )
+
+            st.link_button("📍 Open in Google Maps", maps_url)
+
 else:
     st.warning("No valid coordinates found for the selected filters.")
     st.info("Try selecting more locations or resetting the filters.")
@@ -649,7 +688,29 @@ with st.expander("Directory display options", expanded=False):
 if show_osm_id:
     display_columns.append("OSM ID")
 
-directory = filtered[display_columns].sort_values("Restaurant Name")
+sort_column = st.selectbox(
+    "Sort restaurants by",
+    options=[
+        "Restaurant Name",
+        "Location",
+        "Restaurant Type",
+        "Cuisine",
+    ],
+    key="directory_sort_column",
+)
+
+sort_order = st.radio(
+    "Sort order",
+    options=["A to Z", "Z to A"],
+    horizontal=True,
+    key="directory_sort_order",
+)
+
+directory = filtered[display_columns].sort_values(
+    by=sort_column,
+    ascending=(sort_order == "A to Z"),
+    na_position="last",
+)
 
 st.dataframe(
     directory,
@@ -660,37 +721,50 @@ st.dataframe(
 st.caption(f"Showing {len(filtered):,} mapped records after filtering.")
 
 
+
 # -------------------- CSV and JSON exports --------------------
 
 st.subheader("📥 Export Reports")
 
-csv_data = filtered[display_columns].to_csv(index=False).encode("utf-8-sig")
+export_columns = st.multiselect(
+    "Choose columns for export",
+    options=display_columns,
+    default=display_columns,
+    key="export_columns",
+)
 
-json_data = filtered[display_columns].to_json(
-    orient="records",
-    force_ascii=False,
-    indent=2,
-).encode("utf-8")
+if export_columns:
+    export_df = filtered[export_columns].copy()
 
-export1, export2 = st.columns(2)
+    csv_data = export_df.to_csv(index=False).encode("utf-8-sig")
 
-with export1:
-    st.download_button(
-        label="⬇️ Download CSV Report",
-        data=csv_data,
-        file_name="meerut_restaurants.csv",
-        mime="text/csv",
-        use_container_width=True,
-    )
+    json_data = export_df.to_json(
+        orient="records",
+        force_ascii=False,
+        indent=2,
+    ).encode("utf-8")
 
-with export2:
-    st.download_button(
-        label="⬇️ Download JSON Report",
-        data=json_data,
-        file_name="meerut_restaurants.json",
-        mime="application/json",
-        use_container_width=True,
-    )
+    export1, export2 = st.columns(2)
+
+    with export1:
+        st.download_button(
+            label="⬇️ Download CSV Report",
+            data=csv_data,
+            file_name="meerut_restaurants.csv",
+            mime="text/csv",
+            use_container_width=True,
+        )
+
+    with export2:
+        st.download_button(
+            label="⬇️ Download JSON Report",
+            data=json_data,
+            file_name="meerut_restaurants.json",
+            mime="application/json",
+            use_container_width=True,
+        )
+else:
+    st.info("Please select at least one column to export.")
 
 
 # -------------------- Footer --------------------
