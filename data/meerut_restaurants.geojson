@@ -1,0 +1,3245 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2026-10-26T12:04:33Z",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "way/438133602",
+      "properties": {
+        "@id": "way/438133602",
+        "addr:city": "Meerut",
+        "addr:street": "Garh Road",
+        "amenity": "restaurant",
+        "building": "yes",
+        "name": "Hotel Samrat Heavens",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.7298385,
+          28.9681013
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/1228992059",
+      "properties": {
+        "@id": "way/1228992059",
+        "amenity": "restaurant",
+        "level": "0",
+        "name": "Lala Ji Ka Zaika",
+        "name:hi": "लाला जी का ज़ायका",
+        "takeaway": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.7293611,
+          28.9643289
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/1238089271",
+      "properties": {
+        "@id": "way/1238089271",
+        "addr:city": "Meerut",
+        "addr:district": "Meerut",
+        "amenity": "restaurant",
+        "building": "yes",
+        "name": "Canteen",
+        "operator": "Chaudhary Charan Singh University, Meerut",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.7343119,
+          28.9753102
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/1258232169",
+      "properties": {
+        "@id": "way/1258232169",
+        "amenity": "restaurant",
+        "name": "22b resort",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.7174017,
+          28.9970668
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/1272540676",
+      "properties": {
+        "@id": "way/1272540676",
+        "amenity": "restaurant",
+        "level": "0",
+        "name": "Shiva Tourist Dhaba",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.638981,
+          28.9454515
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/1292804217",
+      "properties": {
+        "@id": "way/1292804217",
+        "amenity": "restaurant",
+        "level": "0",
+        "name": "The Kalam Restaurant",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.6441698,
+          28.9815321
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/1296764722",
+      "properties": {
+        "@id": "way/1296764722",
+        "amenity": "restaurant",
+        "level": "0",
+        "name": "Chaupal Restaurant",
+        "wheelchair": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.6386602,
+          28.9511579
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/1296764870",
+      "properties": {
+        "@id": "way/1296764870",
+        "amenity": "restaurant",
+        "building": "yes",
+        "name": "UP 15 Dhaba",
+        "wheelchair": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.6406427,
+          28.9240991
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/1339611206",
+      "properties": {
+        "@id": "way/1339611206",
+        "amenity": "restaurant",
+        "building": "yes",
+        "contact:mobile": "+91-999-71-44483",
+        "name": "Fest of Heaven",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.7327796,
+          28.9697204
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/1436361087",
+      "properties": {
+        "@id": "way/1436361087",
+        "addr:city": "Meerut",
+        "addr:district": "Meerut",
+        "addr:postcode": "250001",
+        "addr:street": "Abu Lane",
+        "alt_name": "Raj Mahal",
+        "amenity": "restaurant",
+        "building": "yes",
+        "contact:facebook": "https://www.facebook.com/profile.php?id=100063790493619",
+        "cuisine": "grill;burger;pizza;regional;chicken;sandwich;italian;japanese;tex-mex;seafood;indian;donut;chinese;fish_and_chips;sushi;ice_cream;cake;french;dessert;diner;tea;juice;coffee_shop;fries",
+        "diet:chicken": "yes",
+        "diet:dairy_free": "yes",
+        "diet:fish": "yes",
+        "diet:gluten_free": "yes",
+        "diet:halal": "yes",
+        "diet:healthy": "yes",
+        "diet:kosher": "yes",
+        "diet:lactose_free": "yes",
+        "diet:local": "yes",
+        "diet:meat": "yes",
+        "diet:omnivore": "yes",
+        "diet:organic": "yes",
+        "diet:plant-based": "yes",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "yes",
+        "fixme": "the menu does not show any food, all the cuisine and diet:* tags appear doubtful.",
+        "name": "The black hawk bar",
+        "opening_hours": "Mo-Su 10:00-24:00",
+        "phone": "+91 96394 11111",
+        "website": "https://www.theblackhawkbar.com/",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.7038534,
+          28.9955209
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/3407307933",
+      "properties": {
+        "@id": "node/3407307933",
+        "addr:city": "Meerut",
+        "addr:postcode": "250110",
+        "addr:street": "Modipuram",
+        "amenity": "fast_food",
+        "brand": "Domino's",
+        "brand:ks": "ڈومینوز",
+        "brand:pa": "ਡੋਮੀਨੋਜ਼",
+        "brand:ur": "ڈومینوز",
+        "brand:wikidata": "Q839466",
+        "brand:wikipedia": "en:Domino's Pizza",
+        "cuisine": "pizza",
+        "name": "Domino's",
+        "name:ks": "ڈومینوز",
+        "name:pa": "ਡੋਮੀਨੋਜ਼",
+        "name:ur": "ڈومینوز",
+        "takeaway": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.7093783,
+          29.0652785
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/3430724061",
+      "properties": {
+        "@id": "node/3430724061",
+        "amenity": "fast_food",
+        "brand": "Domino's",
+        "brand:ks": "ڈومینوز",
+        "brand:pa": "ਡੋਮੀਨੋਜ਼",
+        "brand:ur": "ڈومینوز",
+        "brand:wikidata": "Q839466",
+        "brand:wikipedia": "en:Domino's Pizza",
+        "cuisine": "pizza",
+        "delivery": "yes",
+        "name": "Domino's",
+        "name:ks": "ڈومینوز",
+        "name:pa": "ਡੋਮੀਨੋਜ਼",
+        "name:ur": "ڈومینوز",
+        "opening_hours": "11:00-23:00",
+        "smoking": "no",
+        "takeaway": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.7301132,
+          28.9530006
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/3430728879",
+      "properties": {
+        "@id": "node/3430728879",
+        "amenity": "restaurant",
+        "brand": "Pizza Hut",
+        "brand:wikidata": "Q191615",
+        "cuisine": "pizza",
+        "delivery": "yes",
+        "name": "Pizza Hut"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.7316232,
+          28.9529082
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/3431045439",
+      "properties": {
+        "@id": "node/3431045439",
+        "amenity": "restaurant",
+        "name": "Caltex Of Omlette Fame"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.7061567,
+          28.9971675
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/3431052252",
+      "properties": {
+        "@id": "node/3431052252",
+        "addr:city": "meerut",
+        "amenity": "restaurant",
+        "cuisine": "indian",
+        "name": "Calcutta sweets"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.7058969,
+          28.9943983
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/3450972235",
+      "properties": {
+        "@id": "node/3450972235",
+        "addr:city": "Meerut",
+        "addr:postcode": "250003",
+        "addr:street": "Abu Lane",
+        "amenity": "restaurant",
+        "cuisine": "indian",
+        "name": "Chula Chowka"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.7040743,
+          28.9959108
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/3909108747",
+      "properties": {
+        "@id": "node/3909108747",
+        "amenity": "cafe",
+        "cuisine": "regional",
+        "internet_access": "no",
+        "name": "Sadick",
+        "opening_hours": "24*7",
+        "smoking": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.6039499,
+          29.1493074
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/4332351284",
+      "properties": {
+        "@id": "node/4332351284",
+        "amenity": "fast_food",
+        "brand": "McDonald's",
+        "brand:pa": "ਮੈਕਡੋਨਲਡ’ਜ਼",
+        "brand:ur": "مکڈونلڈز",
+        "brand:wikidata": "Q38076",
+        "brand:wikipedia": "en:McDonald's",
+        "brand:wikipedia:pa": "ਮੈਕਡੋਨਲਡ’ਜ਼",
+        "brand:wikipedia:ur": "مکڈونلڈز",
+        "capacity": "30",
+        "cuisine": "burger",
+        "mobile": "+91-9759643300",
+        "name": "McDonald's",
+        "name:pa": "ਮੈਕਡੋਨਲਡ’ਜ਼",
+        "name:ur": "مکڈونلڈز",
+        "opening_hours": "11:00-22:00",
+        "smoking": "no",
+        "takeaway": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.7315811,
+          28.9529042
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/4333702919",
+      "properties": {
+        "@id": "node/4333702919",
+        "amenity": "fast_food",
+        "cuisine": "ice_cream",
+        "delivery": "no",
+        "name": "Lip n Sip",
+        "opening_hours": "11:00-23:00",
+        "smoking": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.7324328,
+          28.961077
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/4333711815",
+      "properties": {
+        "@id": "node/4333711815",
+        "amenity": "cafe",
+        "cuisine": "regional;pizza;burger",
+        "internet_access": "no",
+        "name": "Shakti Bakers"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.7316056,
+          28.9612013
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/4358577102",
+      "properties": {
+        "@id": "node/4358577102",
+        "amenity": "restaurant",
+        "name": "Ice Cream Parlour"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.7315731,
+          28.9611958
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/4358604441",
+      "properties": {
+        "@id": "node/4358604441",
+        "amenity": "fast_food",
+        "cuisine": "sweets",
+        "name": "Raseela Petha Bhandar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.7334412,
+          28.9621631
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/4358604443",
+      "properties": {
+        "@id": "node/4358604443",
+        "amenity": "fast_food",
+        "name": "Deshwal"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.7333794,
+          28.9623337
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/4358812550",
+      "properties": {
+        "@id": "node/4358812550",
+        "amenity": "restaurant",
+        "level": "0",
+        "name": "Samrats Sweets & Bakers",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.7304866,
+          28.9674444
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/4674136889",
+      "properties": {
+        "@id": "node/4674136889",
+        "addr:postcode": "250002",
+        "addr:street": "garh road",
+        "amenity": "fast_food",
+        "brand": "Domino's",
+        "brand:wikidata": "Q839466",
+        "cuisine": "pizza",
+        "diet:vegetarian": "yes",
+        "image:menu": "9cac9bee-8061-4872-b409-4cefc40e069c",
+        "image:menu:0": "0e74b7ec-c204-4be8-becc-f9414aeaccd3",
+        "image:menu:1": "575aae0e-3f45-41eb-b79a-4e985730c1c7",
+        "internet_access": "wlan",
+        "name": "Domino's",
+        "name:en": "Domino's",
+        "opening_hours": "Mo-Su 10:00-22:00",
+        "panoramax": "3811ee31-597f-4c1d-9dd4-ccbb5ff127d9",
+        "panoramax:0": "d063d26b-51ff-4023-8827-d99f27c6f613",
+        "panoramax:1": "d6233149-244c-434f-bed5-653ce0083dda",
+        "panoramax:2": "9c0d5afc-37d8-4115-b452-09887a74a030",
+        "panoramax:3": "594192d0-85d4-4ed3-ad08-88f3cd54ff6f",
+        "panoramax:4": "6e6c77e9-ec3a-422e-8269-ca5799514565",
+        "takeaway": "yes",
+        "toilets": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.7230668,
+          28.970159
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/4858770021",
+      "properties": {
+        "@id": "node/4858770021",
+        "amenity": "cafe",
+        "name:en": "Om Shree E restaurant"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.9986351,
+          29.1565745
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/4999923699",
+      "properties": {
+        "@id": "node/4999923699",
+        "amenity": "restaurant",
+        "name": "Jain Mandir Langar Sthal"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.0064801,
+          29.161563
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/5281548433",
+      "properties": {
+        "@id": "node/5281548433",
+        "addr:city": "Meerut",
+        "addr:postcode": "250103",
+        "addr:street": "Meerut Bypass",
+        "amenity": "restaurant",
+        "cuisine": "regional;chinese;coffee_shop;Resort;North_Indian_Food;italian;South_Indian_Food;Mughlai_Food;Hotel;indian",
+        "email": "bravuraresort@gmail.com",
+        "name": "Bravura Gold Resort",
+        "opening_hours": "Sa-Su 00:00-24:00",
+        "phone": "+91-8191079998",
+        "website": "https://www.bravuraresort.com/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.6419181,
+          28.9238335
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/5358650802",
+      "properties": {
+        "@id": "node/5358650802",
+        "addr:city": "Meerut",
+        "addr:street": "Vedvyas Puri",
+        "amenity": "restaurant",
+        "name": "U-like cafeteria"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.6420886,
+          28.9579026
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/9642639717",
+      "properties": {
+        "@id": "node/9642639717",
+        "amenity": "fast_food",
+        "contact:mobile": "+91 97201 01313",
+        "cuisine": "punjabi",
+        "diet:vegetarian": "yes",
+        "name": "Amritsari Kulcha King‌‌‌",
+        "name:en": "Amritsari Kulcha King",
+        "name:hi": "अमृतसरी कुलचा किंग"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.706723,
+          28.983699
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/9642833317",
+      "properties": {
+        "@id": "node/9642833317",
+        "addr:city": "Meerut",
+        "addr:district": "Meerut",
+        "addr:floor": "0",
+        "addr:state": "Uttar Pradesh",
+        "amenity": "restaurant",
+        "check_date": "2024-08-29",
+        "diet:vegetarian": "yes",
+        "level": "0",
+        "name": "Ganga Shudh Bhojanalaya",
+        "name:en": "Ganga Hotel",
+        "name:hi": "गंगा शुद्ध भोजनालय",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.740502,
+          28.9631788
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/9801593717",
+      "properties": {
+        "@id": "node/9801593717",
+        "addr:city": "Meerut",
+        "addr:housenumber": "129/C-4",
+        "addr:postcode": "250002",
+        "addr:street": "Central Market Road",
+        "amenity": "restaurant",
+        "description": "It is a vegetarian restaurant that serves soya chaap with Indian breads like tandoori roti, rumali roti, Naan etc.",
+        "name": "Veer Ji Malai Chaap Waale",
+        "name:hi": "वीर जी मलाई ‌चाप वाले",
+        "opening_hours": "Mo-Su 15:00-23:00",
+        "phone": "+91-9760801155",
+        "website": "https://veer-ji-malai-chaap-wale.business.site/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.7295589,
+          28.964898
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/9958943117",
+      "properties": {
+        "@id": "node/9958943117",
+        "amenity": "fast_food",
+        "indoor_seating": "yes",
+        "name": "Gazebo Refreshment and Madrasi Pav Bhaji",
+        "name:en": "Gazebo Refreshment and Madrasi Pav Bhaji",
+        "outdoor_seating": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.706292,
+          28.9841524
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/10017814518",
+      "properties": {
+        "@id": "node/10017814518",
+        "amenity": "restaurant",
+        "name": "दिल्ली ढाबा",
+        "name:en": "Dilli Dhaba"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.720019,
+          28.971201
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11241067172",
+      "properties": {
+        "@id": "node/11241067172",
+        "amenity": "fast_food",
+        "cuisine": "sweets;samosa",
+        "level": "0",
+        "name": "Sri Balaji Sweet Shop"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.727032,
+          28.9880011
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11245587265",
+      "properties": {
+        "@id": "node/11245587265",
+        "amenity": "restaurant",
+        "cuisine": "pizza;indian",
+        "internet_access": "no",
+        "level": "0",
+        "name": "Chandni Chowk Food Court",
+        "opening_hours": "PH,Mo-Su 11:00-23:00",
+        "toilets": "yes",
+        "toilets:access": "customers",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.7059081,
+          28.9948144
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11245587266",
+      "properties": {
+        "@id": "node/11245587266",
+        "amenity": "restaurant",
+        "check_date": "2024-07-12",
+        "cuisine": "punjabi",
+        "diet:vegetarian": "yes",
+        "level": "0",
+        "name": "Pinky Chole Bhature",
+        "name:hi": "पिंकी छोले भटूरे"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.7084274,
+          28.9968342
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11245684766",
+      "properties": {
+        "@id": "node/11245684766",
+        "amenity": "restaurant",
+        "cuisine": "indian;snack",
+        "level": "0",
+        "name": "Radhe Shyam Chat Bhandar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.7056271,
+          28.9921581
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11247782563",
+      "properties": {
+        "@id": "node/11247782563",
+        "air_conditioning": "no",
+        "amenity": "cafe",
+        "cuisine": "tea",
+        "indoor_seating": "no",
+        "level": "0",
+        "name:signed": "no",
+        "street_vendor": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.729652,
+          28.9673479
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11250762409",
+      "properties": {
+        "@id": "node/11250762409",
+        "amenity": "internet_cafe",
+        "check_date": "2024-04-04",
+        "level": "0",
+        "name": "Barkha Cyber Cafe",
+        "name:hi": "बरखा साइबर कैफे"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.7346447,
+          28.984208
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11250812455",
+      "properties": {
+        "@id": "node/11250812455",
+        "amenity": "cafe",
+        "check_date": "2024-01-22",
+        "level": "0",
+        "name": "Eat Out",
+        "name:hi": "ईट आउट"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.7270528,
+          28.9878371
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11250812458",
+      "properties": {
+        "@id": "node/11250812458",
+        "addr:city": "Meerut",
+        "amenity": "fast_food",
+        "check_date": "2024-08-21",
+        "diet:vegetarian": "yes",
+        "level": "0",
+        "name": "Thakur Fast Food and Chai Coffee Corner",
+        "phone": "+91 98371 16875",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.727623,
+          28.9877633
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11250867993",
+      "properties": {
+        "@id": "node/11250867993",
+        "amenity": "restaurant",
+        "level": "-1",
+        "name": "Dining Inn"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.7296874,
+          28.9869584
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11254797698",
+      "properties": {
+        "@id": "node/11254797698",
+        "addr:city": "Meerut",
+        "addr:district": "Meerut",
+        "addr:street": "Gol Market",
+        "amenity": "fast_food",
+        "check_date": "2024-08-22",
+        "cuisine": "dosa;pav_bhaji;chowmeen",
+        "diet:vegetarian": "yes",
+        "opening_hours": "17:00-22:00"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.7276096,
+          28.9877618
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11254977771",
+      "properties": {
+        "@id": "node/11254977771",
+        "amenity": "restaurant",
+        "level": "1",
+        "name": "Tezpatta Restaurant"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.7370299,
+          28.9681348
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11254977778",
+      "properties": {
+        "@id": "node/11254977778",
+        "amenity": "restaurant",
+        "check_date": "2024-04-09",
+        "name": "The Yellow Chilli",
+        "name:hi": "द येलो चिली"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.7361892,
+          28.967092
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11255125468",
+      "properties": {
+        "@id": "node/11255125468",
+        "air_conditioning": "no",
+        "amenity": "cafe",
+        "check_date": "2024-03-14",
+        "cuisine": "tea",
+        "indoor_seating": "yes",
+        "level": "0",
+        "name": "Chai Sang Tafri",
+        "note": "It is a shop which sells chai.",
+        "street_vendor": "yes",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.7368508,
+          28.9683913
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11257793549",
+      "properties": {
+        "@id": "node/11257793549",
+        "addr:city": "Meerut",
+        "addr:district": "Meerut",
+        "amenity": "restaurant",
+        "check_date": "2024-01-10",
+        "contact:mobile": "+91 74510-95814",
+        "delivery": "no",
+        "diet:lacto_vegetarian": "yes",
+        "name": "Bhola Dhaba",
+        "name:hi": "भोला ढाबा",
+        "takeaway": "yes",
+        "toilets": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.7314711,
+          28.9789791
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11260953150",
+      "properties": {
+        "@id": "node/11260953150",
+        "amenity": "fast_food",
+        "level": "0",
+        "name": "Chinese Junction",
+        "name:hi": "चाईनीज़ जन्क्शन"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.7316364,
+          28.986739
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11266776855",
+      "properties": {
+        "@id": "node/11266776855",
+        "amenity": "restaurant",
+        "check_date": "2024-08-08",
+        "contact:mobile": "+91 95688 37602;+91 96277 81127;+91 95578 15404",
+        "cuisine": "regional",
+        "diet:vegetarian": "yes",
+        "image:menu": "3f0ea6b6-e0a7-4351-840f-f2b28b3ce408",
+        "level": "0",
+        "name": "Vikki Shudh Bhojanalaya",
+        "name:hi": "विक्की शुद्ध भोजनालय",
+        "opening_hours": "Mo-Su 11:00-16:00,18:00-22:30",
+        "operator": "Hukum Singh",
+        "panoramax": "4ec3dcf8-a33f-4247-90f2-d0f68236d40b",
+        "phone": "+91 95688 37602",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.7314262,
+          28.9795023
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11266801075",
+      "properties": {
+        "@id": "node/11266801075",
+        "amenity": "fast_food",
+        "cuisine": "juice",
+        "level": "0",
+        "name": "Om Juice Corner"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.7368033,
+          28.9811554
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11266801095",
+      "properties": {
+        "@id": "node/11266801095",
+        "amenity": "restaurant",
+        "level": "0",
+        "name": "Veere Di Hatti"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.7241527,
+          28.9823645
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11271701328",
+      "properties": {
+        "@id": "node/11271701328",
+        "amenity": "restaurant",
+        "name": "Udipi Dosa Express",
+        "name:en": "Udipi Dosa Express",
+        "takeaway": "yes",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.7315393,
+          28.9528667
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11277194965",
+      "properties": {
+        "@id": "node/11277194965",
+        "addr:city": "Meerut",
+        "addr:street": "Abu Lane",
+        "amenity": "restaurant",
+        "contact:mobile": "+91 97602 58610;+91 88593 89049",
+        "cuisine": "punjabi;indian",
+        "diet:vegetarian": "yes",
+        "level": "0",
+        "name": "Bittu Vaishno Hotel",
+        "name:hi": "बिट्टू वैष्णो होटल",
+        "opening_hours": "Mo-Su 09:00-23:30; PH open",
+        "toilets:wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.7048138,
+          28.9951463
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11277199593",
+      "properties": {
+        "@id": "node/11277199593",
+        "amenity": "restaurant",
+        "level": "0",
+        "name": "Karnail Hotel and Restaurant"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.7053228,
+          28.9950915
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11277199594",
+      "properties": {
+        "@id": "node/11277199594",
+        "amenity": "restaurant",
+        "level": "0",
+        "name": "Delhi Chhole Bhature"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.699859,
+          28.996688
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11277199600",
+      "properties": {
+        "@id": "node/11277199600",
+        "addr:city": "Meerut",
+        "addr:district": "Meerut",
+        "addr:street": "Abu Lane",
+        "amenity": "restaurant",
+        "cuisine": "punjabi",
+        "name": "Radhe Chat Bhandar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.705273,
+          28.994945
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11330943371",
+      "properties": {
+        "@id": "node/11330943371",
+        "amenity": "restaurant",
+        "cuisine": "indian",
+        "name": "Shiva Tourist Dhaba"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.7129029,
+          29.1314013
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11338232820",
+      "properties": {
+        "@id": "node/11338232820",
+        "addr:city": "Meerut",
+        "addr:full": "NH 58/334, Village Walidpur, Near Daurala, Meerut (U.P.)",
+        "addr:neighbourhood": "Walidpur",
+        "addr:street": "NH 58/334",
+        "air_conditioning": "yes",
+        "amenity": "restaurant",
+        "contact:mobile": "+91-88688-21711",
+        "diet:lacto_vegetarian": "yes",
+        "level": "0",
+        "name": "Shiva Dhaba",
+        "operator": "Jitendra Chaudhary (Babugarh Wale)",
+        "outdoor_seating": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.7142997,
+          29.1513316
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11341425064",
+      "properties": {
+        "@id": "node/11341425064",
+        "amenity": "internet_cafe",
+        "level": "0",
+        "name": "Harsh Computer Center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.7320043,
+          28.9906243
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11343226572",
+      "properties": {
+        "@id": "node/11343226572",
+        "addr:city": "Meerut",
+        "addr:district": "Meerut",
+        "addr:housenumber": "73",
+        "addr:place": "Jail Chungi",
+        "addr:street": "CCS University Road",
+        "amenity": "restaurant",
+        "check_date": "2024-09-01",
+        "diet:vegetarian": "yes",
+        "level": "0",
+        "name": "Tanu Vaishno Bhojanalaya",
+        "name:hi": "तनु वैष्णो भोजनालय",
+        "opening_hours": "11:00-15:30,18:30-22:30",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.7320248,
+          28.9786911
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11357896009",
+      "properties": {
+        "@id": "node/11357896009",
+        "addr:city": "Meerut",
+        "addr:district": "Meerut",
+        "addr:street": "Garh Road",
+        "amenity": "fast_food",
+        "brand": "Subway",
+        "brand:wikidata": "Q244457",
+        "brand:wikipedia": "en:Subway (restaurant)",
+        "cuisine": "sandwich",
+        "level": "0",
+        "name": "Subway",
+        "takeaway": "yes",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.7305989,
+          28.9674036
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11357900523",
+      "properties": {
+        "@id": "node/11357900523",
+        "addr:street": "Garh Road",
+        "amenity": "restaurant",
+        "level": "0",
+        "name": "Pind Balluchi Express",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.7318107,
+          28.9665708
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11429024227",
+      "properties": {
+        "@id": "node/11429024227",
+        "addr:city": "Meerut",
+        "addr:district": "Meerut",
+        "addr:housenumber": "49",
+        "addr:place": "Nauchandi",
+        "addr:postcode": "250002",
+        "addr:state": "Uttar Pradesh",
+        "addr:street": "Garh Road",
+        "addr:suburb": "Nauchandi",
+        "air_conditioning": "yes",
+        "alt_name": "Haldiram",
+        "amenity": "fast_food",
+        "brand": "Haldiram's",
+        "brand:wikidata": "Q17054442",
+        "check_date": "2026-04-12;2024-11-18",
+        "contact:mobile": "+91 85880 00362",
+        "cuisine": "indian",
+        "diet:lacto_vegetarian": "only",
+        "image:menu": "192625c7-05d8-4f72-99c4-3177e0be6976",
+        "image:menu:0": "ea9f0259-19e4-4212-b472-276ff5191292",
+        "image:menu:1": "b01321c3-9933-420a-8991-74dd7dcef817",
+        "image:menu:2": "80fe18aa-5a34-4471-808b-28e64ee149b4",
+        "image:menu:3": "2080dbe8-dc3a-47c9-af93-67472eb5b240",
+        "image:menu:4": "26f65e7a-4f62-4d44-870e-27aad670ff37",
+        "image:menu:5": "0da01542-750b-40ec-828c-4a3d7463a16b",
+        "indoor_seating": "yes",
+        "internet_access": "no",
+        "level": "0",
+        "name": "Haldiram's",
+        "name:en": "Haldiram's",
+        "opening_hours": "08:30-23:00",
+        "operator": "Haldiram Ethnic Foods Private Limited;Haldiram Ethnic Foods Pvt. Ltd",
+        "outdoor_seating": "no",
+        "panoramax": "1684b6b1-ada1-4844-ad3d-9cee990450d6",
+        "panoramax:0": "e316c64e-5e98-49ab-b648-4019ab19da3d",
+        "panoramax:1": "c332f00e-bba7-4ff6-a921-0cc484bb2225",
+        "seats": "106",
+        "self_service": "only",
+        "smoking": "no",
+        "tables": "22",
+        "takeaway": "yes",
+        "toilets": "yes",
+        "toilets:access": "customers",
+        "toilets:wheelchair": "yes",
+        "website": "https://www.haldiram.com/",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.7246216,
+          28.9687508
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11466394463",
+      "properties": {
+        "@id": "node/11466394463",
+        "amenity": "cafe",
+        "level": "0",
+        "name:signed": "no",
+        "street_vendor": "yes",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.7372076,
+          28.9812873
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11500009681",
+      "properties": {
+        "@id": "node/11500009681",
+        "addr:city": "Meerut",
+        "addr:district": "Meerut",
+        "addr:street": "Kila Road",
+        "amenity": "fast_food",
+        "cuisine": "indian;chaat",
+        "diet:vegetarian": "yes",
+        "street_vendor": "yes",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.7331631,
+          28.9799513
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11503108403",
+      "properties": {
+        "@id": "node/11503108403",
+        "amenity": "restaurant",
+        "check_date": "2024-01-20",
+        "level": "0",
+        "name": "Mirchi Seth",
+        "name:hi": "मिर्ची सेठ",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.724335,
+          28.9821584
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11505562444",
+      "properties": {
+        "@id": "node/11505562444",
+        "air_conditioning": "yes",
+        "amenity": "restaurant",
+        "check_date": "2025-11-02",
+        "internet_access": "no",
+        "name": "Kingdom of Momos",
+        "phone": "+91 86300 42364"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.7005782,
+          28.9981414
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11505562445",
+      "properties": {
+        "@id": "node/11505562445",
+        "addr:city": "Meerut",
+        "addr:district": "Meerut",
+        "amenity": "fast_food",
+        "brand": "Burger King",
+        "cuisine": "burger",
+        "name": "Burger Singh",
+        "not:brand:wikidata": "Q177054",
+        "takeaway": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.7004145,
+          28.9981927
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11505562446",
+      "properties": {
+        "@id": "node/11505562446",
+        "amenity": "restaurant",
+        "diet:lacto_vegetarian": "yes",
+        "level": "0",
+        "name": "Flavour Restaurant"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.7006652,
+          28.9982881
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11505562449",
+      "properties": {
+        "@id": "node/11505562449",
+        "amenity": "cafe",
+        "level": "0",
+        "name": "Lettuce Berry Cafe",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.7006049,
+          28.9989442
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11505569689",
+      "properties": {
+        "@id": "node/11505569689",
+        "amenity": "fast_food",
+        "brand": "Pizza Hut",
+        "cuisine": "pizza",
+        "name": "Biggies' Pizza",
+        "not:brand:wikidata": "Q191615",
+        "takeaway": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.7002354,
+          28.9973562
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11518521997",
+      "properties": {
+        "@id": "node/11518521997",
+        "addr:city": "Meerut",
+        "addr:housenumber": "28/2",
+        "addr:place": "New Arya Nagar",
+        "addr:street": "Kila Road",
+        "amenity": "internet_cafe",
+        "contact:mobile": "+91 93595 57549",
+        "email": "aatulvermaa@gmail.com",
+        "internet_access": "yes",
+        "internet_access:fee": "customers",
+        "name": "Roopali Computers",
+        "operator": "Atul Verma",
+        "operator:type": "public"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.7354667,
+          28.9806547
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11543009174",
+      "properties": {
+        "@id": "node/11543009174",
+        "amenity": "cafe",
+        "cuisine": "Tea",
+        "street_vendor": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.7067293,
+          28.9841482
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11554623732",
+      "properties": {
+        "@id": "node/11554623732",
+        "amenity": "cafe",
+        "cuisine": "Tea",
+        "name": "Yadav Tea Stall"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.7279067,
+          28.9925376
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11559726728",
+      "properties": {
+        "@id": "node/11559726728",
+        "amenity": "restaurant",
+        "name": "Italian Bite Pizza"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.6552979,
+          28.9916279
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11559756400",
+      "properties": {
+        "@id": "node/11559756400",
+        "amenity": "restaurant",
+        "name": "Pawan Dhaba"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.7017422,
+          28.9908217
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11684627551",
+      "properties": {
+        "@id": "node/11684627551",
+        "addr:city": "Meerut",
+        "addr:street": "Nai Sadak",
+        "amenity": "cafe",
+        "cuisine": "juice",
+        "name": "Delicious Juice",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.728698,
+          28.9639242
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11687606278",
+      "properties": {
+        "@id": "node/11687606278",
+        "amenity": "cafe",
+        "cuisine": "tea",
+        "name:signed": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.7325752,
+          28.9765469
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11691041382",
+      "properties": {
+        "@id": "node/11691041382",
+        "amenity": "cafe",
+        "cuisine": "juice"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.731607,
+          28.9790704
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11697325695",
+      "properties": {
+        "@id": "node/11697325695",
+        "addr:city": "Meerut",
+        "amenity": "restaurant",
+        "name": "Hira Sweets"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.7129075,
+          28.9957685
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11697327145",
+      "properties": {
+        "@id": "node/11697327145",
+        "amenity": "restaurant",
+        "name": "terrace bistro"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.7099671,
+          28.9959233
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11697372303",
+      "properties": {
+        "@id": "node/11697372303",
+        "amenity": "restaurant",
+        "name": "ora cafe and lounge"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.7105207,
+          28.99646
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11730556491",
+      "properties": {
+        "@id": "node/11730556491",
+        "amenity": "cafe",
+        "cuisine": "tea",
+        "level": "0",
+        "name": "Rajni Tea Stall",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.7356534,
+          28.9686381
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11730556500",
+      "properties": {
+        "@id": "node/11730556500",
+        "amenity": "restaurant",
+        "diet:vegetarian": "no",
+        "level": "0",
+        "name": "Continental"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.7352208,
+          28.9665363
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11783297387",
+      "properties": {
+        "@id": "node/11783297387",
+        "amenity": "restaurant",
+        "level": "0",
+        "name": "Biggies Pizza",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.7104423,
+          28.9873585
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11783297405",
+      "properties": {
+        "@id": "node/11783297405",
+        "amenity": "restaurant",
+        "level": "0",
+        "name": "Royal Restaurant",
+        "opening_hours": "Mo-Su 09:00-20:00",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.7074572,
+          28.9850637
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11786692106",
+      "properties": {
+        "@id": "node/11786692106",
+        "amenity": "restaurant",
+        "check_date": "2024-04-04",
+        "name": "Punjab Sweets Restaurant",
+        "name:hi": "पंजाब स्वीट्स रेस्तरां",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.7433548,
+          29.0061812
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11786708702",
+      "properties": {
+        "@id": "node/11786708702",
+        "amenity": "restaurant",
+        "check_date": "2024-04-04",
+        "diet:vegetarian": "yes",
+        "name": "Sai Sweets",
+        "phone": "+91 74550 33040",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.7440496,
+          29.0067389
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11786708703",
+      "properties": {
+        "@id": "node/11786708703",
+        "amenity": "cafe",
+        "check_date": "2024-04-04",
+        "level": "0",
+        "name": "Global Tea Cafe",
+        "phone": "+91 73005 01446",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.7445137,
+          29.0070517
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11786708704",
+      "properties": {
+        "@id": "node/11786708704",
+        "addr:street": "Mawana Road",
+        "air_conditioning": "no",
+        "amenity": "restaurant",
+        "check_date": "2024-07-25",
+        "cuisine": "indian",
+        "diet:vegetarian": "yes",
+        "level": "0",
+        "name": "Ramesh Dosa",
+        "name:hi": "रमेश ‌डोसा",
+        "opening_hours": "09:30-22:30",
+        "panoramax": "deb01683-c7b6-4b41-a1c3-2d729bf8ab6c",
+        "panoramax:0": "f2752ad5-5af2-4156-8569-8733da43e6e9",
+        "panoramax:1": "3f7296af-8e21-4b72-9c24-d25392cad02b",
+        "phone": "+91 99971 21813",
+        "source": "local knowledge",
+        "takeaway": "yes",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.7445604,
+          29.0071015
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11786770494",
+      "properties": {
+        "@id": "node/11786770494",
+        "addr:city": "Meerut",
+        "addr:street": "Mawana Road",
+        "amenity": "cafe",
+        "brand": "Starbucks",
+        "brand:wikidata": "Q37158",
+        "cuisine": "coffee_shop",
+        "level": "0",
+        "name": "Starbucks",
+        "official_name": "Starbucks Coffee",
+        "takeaway": "yes",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.7459864,
+          29.0076687
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11786770499",
+      "properties": {
+        "@id": "node/11786770499",
+        "addr:city": "Meerut",
+        "addr:street": "Mawana Road",
+        "amenity": "fast_food",
+        "brand": "Burger King",
+        "brand:wikidata": "Q177054",
+        "cuisine": "burger",
+        "level": "0",
+        "name": "Burger King",
+        "panoramax": "66ec824c-aad8-41fd-b2ff-eddd51415d83",
+        "takeaway": "yes",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.7459091,
+          29.0076102
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11786770503",
+      "properties": {
+        "@id": "node/11786770503",
+        "amenity": "restaurant",
+        "check_date": "2024-04-04",
+        "level": "0",
+        "name": "Chicago Pizza",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.7461508,
+          29.0077289
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11786787797",
+      "properties": {
+        "@id": "node/11786787797",
+        "addr:city": "Meerut",
+        "amenity": "cafe",
+        "check_date": "2024-07-25",
+        "level": "1",
+        "name": "Eden",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.7461199,
+          29.007728
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11786892447",
+      "properties": {
+        "@id": "node/11786892447",
+        "amenity": "restaurant",
+        "check_date": "2024-04-04",
+        "level": "0",
+        "name": "Chinese Town Fast Food",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.7445335,
+          29.0065328
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11786892448",
+      "properties": {
+        "@id": "node/11786892448",
+        "amenity": "restaurant",
+        "check_date": "2024-04-04",
+        "diet:vegetarian": "yes",
+        "level": "0",
+        "name": "Food Hunter",
+        "source": "survey",
+        "toilets:wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.7441497,
+          29.0061798
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11792566786",
+      "properties": {
+        "@id": "node/11792566786",
+        "amenity": "cafe",
+        "check_date": "2024-04-04",
+        "cuisine": "chai",
+        "level": "0",
+        "name": "Chai Cube",
+        "outdoor_seating": "yes",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.743825,
+          29.005917
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11792566788",
+      "properties": {
+        "@id": "node/11792566788",
+        "amenity": "restaurant",
+        "check_date": "2024-04-04",
+        "cuisine": "chinese",
+        "level": "0",
+        "name": "Kingdom of Momos"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.7430487,
+          29.0051481
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11792737043",
+      "properties": {
+        "@id": "node/11792737043",
+        "amenity": "fast_food",
+        "check_date": "2024-04-05",
+        "level": "0",
+        "name": "Derawal Chat",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.6984825,
+          28.9975823
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11792737048",
+      "properties": {
+        "@id": "node/11792737048",
+        "addr:city": "Meerut",
+        "addr:district": "Meerut",
+        "addr:housenumber": "circular road",
+        "addr:postcode": "250001",
+        "addr:street": "near hanuman chowk, bombay bazar",
+        "amenity": "restaurant",
+        "check_date": "2024-04-05",
+        "diet:vegetarian": "yes",
+        "name": "The Food Club",
+        "opening_hours": "Mo-Su 10:00-22:00",
+        "phone": "0121 402 8899",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.6977531,
+          28.9982902
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11792737049",
+      "properties": {
+        "@id": "node/11792737049",
+        "amenity": "restaurant",
+        "check_date": "2024-04-05",
+        "level": "0",
+        "name": "Chilly Punjab",
+        "phone": "+91 121 266 5999; +91 121 433 0533",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.6972033,
+          28.99871
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11792851962",
+      "properties": {
+        "@id": "node/11792851962",
+        "amenity": "restaurant",
+        "level": "0",
+        "name": "Vanakkam Bharat",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.6997454,
+          28.9987692
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11792851963",
+      "properties": {
+        "@id": "node/11792851963",
+        "amenity": "restaurant",
+        "level": "0",
+        "name": "Live Kitchen"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.7012784,
+          28.9993105
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11792851967",
+      "properties": {
+        "@id": "node/11792851967",
+        "amenity": "fast_food",
+        "level": "0",
+        "name": "China Town",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.6989625,
+          28.9981845
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11792853569",
+      "properties": {
+        "@id": "node/11792853569",
+        "amenity": "cafe",
+        "level": "0",
+        "name": "London Brew Coffee Shop",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.7005125,
+          28.9988986
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11792869767",
+      "properties": {
+        "@id": "node/11792869767",
+        "amenity": "restaurant",
+        "check_date": "2024-04-05",
+        "level": "0",
+        "name": "Sardarji's Chaap Corner",
+        "phone": "+91 83938 39385"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.698571,
+          28.9981525
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11792869768",
+      "properties": {
+        "@id": "node/11792869768",
+        "amenity": "fast_food",
+        "check_date": "2024-04-05",
+        "cuisine": "juice",
+        "level": "0",
+        "name": "Jain Shikanji"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.6992765,
+          28.998295
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11792899569",
+      "properties": {
+        "@id": "node/11792899569",
+        "amenity": "fast_food",
+        "check_date": "2024-04-05",
+        "level": "0",
+        "name": "Roll N More",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.6994153,
+          28.9985756
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11792915470",
+      "properties": {
+        "@id": "node/11792915470",
+        "amenity": "fast_food",
+        "level": "0",
+        "name": "Ankit da Dhaba",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.6965514,
+          28.9985367
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11793716058",
+      "properties": {
+        "@id": "node/11793716058",
+        "addr:city": "Meerut",
+        "amenity": "restaurant",
+        "level": "1",
+        "name": "Alfa Spice"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.6987612,
+          28.9978576
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11793811874",
+      "properties": {
+        "@id": "node/11793811874",
+        "amenity": "fast_food",
+        "check_date": "2024-04-05",
+        "level": "0",
+        "name": "Food on Fire",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.7336118,
+          28.9856161
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11793811875",
+      "properties": {
+        "@id": "node/11793811875",
+        "amenity": "fast_food",
+        "check_date": "2024-04-05",
+        "level": "0",
+        "name": "Kritika Fast Food",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.733239,
+          28.9860416
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11793811876",
+      "properties": {
+        "@id": "node/11793811876",
+        "amenity": "fast_food",
+        "check_date": "2024-04-05",
+        "cuisine": "burger;chowmein",
+        "level": "0",
+        "name": "Mansi Fast Food"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.7330437,
+          28.9860666
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11795239056",
+      "properties": {
+        "@id": "node/11795239056",
+        "amenity": "fast_food",
+        "cuisine": "juice",
+        "level": "0",
+        "name": "Shivam Juice Corner",
+        "street_vendor": "yes",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.736985,
+          28.9813442
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11795239060",
+      "properties": {
+        "@id": "node/11795239060",
+        "amenity": "fast_food",
+        "cuisine": "juice",
+        "name": "Aryan Kashyap Juice Corner",
+        "street_vendor": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.7372791,
+          28.9814469
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11795755983",
+      "properties": {
+        "@id": "node/11795755983",
+        "amenity": "fast_food",
+        "check_date": "2024-04-06",
+        "level": "0",
+        "name": "Olvez Pizza",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.7303342,
+          28.9845776
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11799863560",
+      "properties": {
+        "@id": "node/11799863560",
+        "amenity": "fast_food",
+        "level": "0",
+        "name": "Chaska Foods",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.6982911,
+          28.9969961
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11985026557",
+      "properties": {
+        "@id": "node/11985026557",
+        "amenity": "restaurant",
+        "level": "0",
+        "name": "Panditji Five Star Dhaba"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.6402565,
+          28.9646381
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/12061129651",
+      "properties": {
+        "@id": "node/12061129651",
+        "alt_name": "Kentucky Fried Chicken",
+        "alt_name:en": "Kentucky Fried Chicken",
+        "alt_name:hi": "केंटुकी फ्राइड चिकन",
+        "alt_name:pa": "ਕੈਂਟੁਕੀ ਫ੍ਰਾਈਡ ਚਿਕਨ",
+        "alt_name:pnb": "کینٹکی فرائیڈ چکن",
+        "alt_name:ur": "کینٹکی فرائیڈ چکن",
+        "amenity": "fast_food",
+        "brand": "KFC",
+        "brand:en": "KFC",
+        "brand:hi": "केएफसी",
+        "brand:pa": "ਕੇਐਫਸੀ",
+        "brand:pnb": "کے ایف سی",
+        "brand:ur": "کے ایف سی",
+        "cuisine": "chicken",
+        "level": "0",
+        "name": "KFC",
+        "name:en": "KFC",
+        "name:hi": "केएफसी",
+        "name:pa": "ਕੇਐਫਸੀ",
+        "name:pnb": "کے ایف سی",
+        "name:ur": "کے ایف سی",
+        "takeaway": "yes",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.7390208,
+          28.9638468
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/12064854045",
+      "properties": {
+        "@id": "node/12064854045",
+        "addr:city": "Meerut",
+        "amenity": "restaurant",
+        "level": "0",
+        "name": "Chicken Bombay"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.7627742,
+          28.999364
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/12064854047",
+      "properties": {
+        "@id": "node/12064854047",
+        "addr:city": "Meerut",
+        "amenity": "restaurant",
+        "level": "0",
+        "name": "Dhamaji Restaurant"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.7628372,
+          28.9993372
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/12064854049",
+      "properties": {
+        "@id": "node/12064854049",
+        "addr:city": "Meerut",
+        "amenity": "restaurant",
+        "level": "0",
+        "name": "Chaat Puchka"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.7629091,
+          28.999312
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/12073743514",
+      "properties": {
+        "@id": "node/12073743514",
+        "amenity": "fast_food",
+        "cuisine": "ice_cream",
+        "level": "0",
+        "name": "The Belgian Waffle Co",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.7462836,
+          29.0079119
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/12082665314",
+      "properties": {
+        "@id": "node/12082665314",
+        "addr:city": "Meerut",
+        "addr:state": "UP",
+        "air_conditioning": "yes",
+        "amenity": "restaurant",
+        "brand": "Rom's Pizza",
+        "cuisine": "pizza",
+        "level": "0",
+        "name": "Rom's Pizza",
+        "takeaway": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.7379554,
+          28.9667509
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/12095069879",
+      "properties": {
+        "@id": "node/12095069879",
+        "amenity": "restaurant",
+        "level": "1",
+        "name": "Baati Chokha Restaurant"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.7125785,
+          28.9906797
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/12118584212",
+      "properties": {
+        "@id": "node/12118584212",
+        "air_conditioning": "no",
+        "amenity": "fast_food",
+        "check_date": "2024-08-20",
+        "contact:mobile": "+91-63962-72540",
+        "cuisine": "chinese;italian",
+        "indoor_seating": "no",
+        "level": "0",
+        "name": "Red Chilli",
+        "opening_hours:drive_through": "15:00-22:00",
+        "outdoor_seating": "yes",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.728787,
+          28.9887052
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/12132389372",
+      "properties": {
+        "@id": "node/12132389372",
+        "addr:city": "Meerut",
+        "addr:street": "Garh Road",
+        "amenity": "restaurant",
+        "brand": "Pizza Hut",
+        "brand:wikidata": "Q191615",
+        "cuisine": "pizza",
+        "level": "0",
+        "name": "Pizza Hut"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.7226638,
+          28.9702665
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/12134035870",
+      "properties": {
+        "@id": "node/12134035870",
+        "amenity": "restaurant",
+        "level": "0",
+        "name": "Kaka Shudha Bhojanalaya"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.7404675,
+          28.9630849
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/12151051557",
+      "properties": {
+        "@id": "node/12151051557",
+        "amenity": "restaurant",
+        "name": "Babu Shyam Food Restaurant",
+        "name:hi": "बाबू श्याम फूड रेस्टोरेन्ट"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.7376995,
+          28.9665587
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/12151051558",
+      "properties": {
+        "@id": "node/12151051558",
+        "air_conditioning": "no",
+        "amenity": "restaurant",
+        "level": "0",
+        "name": "Mini Da Restaurant",
+        "name:hi": "मिनी दा रेस्टॉरैन्ट",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.7377971,
+          28.9666364
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/12151051560",
+      "properties": {
+        "@id": "node/12151051560",
+        "amenity": "internet_cafe",
+        "level": "0",
+        "name": "Kumar Electrostat"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.7377611,
+          28.9666006
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/12180380606",
+      "properties": {
+        "@id": "node/12180380606",
+        "addr:block": "A",
+        "addr:housenumber": "64",
+        "addr:place": "Basant Vihar",
+        "addr:street": "Kila Road",
+        "amenity": "restaurant",
+        "check_date": "2025-01-19",
+        "level": "0",
+        "name": "Secret Sauce",
+        "opening_hours": "Mo-Su 09:00-23:00",
+        "payment:cash": "yes",
+        "payment:upi": "yes",
+        "phone": "+91 70783 44303"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.7380991,
+          28.9818106
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/12331566817",
+      "properties": {
+        "@id": "node/12331566817",
+        "addr:street": "Garh Road",
+        "amenity": "restaurant",
+        "level": "0",
+        "name": "Masala Maarke"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.7310996,
+          28.9667407
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/12347730474",
+      "properties": {
+        "@id": "node/12347730474",
+        "addr:city": "Meerut",
+        "addr:street": "Garh Road",
+        "amenity": "restaurant",
+        "name": "Hungries"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.729362,
+          28.9679081
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/12581889932",
+      "properties": {
+        "@id": "node/12581889932",
+        "addr:city": "Meerut",
+        "amenity": "restaurant",
+        "name": "Golden Spoon"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.7129519,
+          28.9957847
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/12581889941",
+      "properties": {
+        "@id": "node/12581889941",
+        "addr:city": "Meerut",
+        "addr:housenumber": "183",
+        "addr:place": "Civil Lines",
+        "addr:postcode": "250001",
+        "addr:street": "Boundary road",
+        "amenity": "restaurant",
+        "name": "New York Pizza"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.715357,
+          28.9963574
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/12598485124",
+      "properties": {
+        "@id": "node/12598485124",
+        "addr:city": "Meerut",
+        "amenity": "fast_food",
+        "brand": "Domino's",
+        "brand:wikidata": "Q839466",
+        "cuisine": "pizza",
+        "name": "Domino's",
+        "takeaway": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.7131215,
+          28.9901467
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/12705168617",
+      "properties": {
+        "@id": "node/12705168617",
+        "air_conditioning": "yes",
+        "amenity": "fast_food",
+        "check_date": "2025-08-18",
+        "level": "0",
+        "name": "Ramesh Dosa",
+        "opening_hours": "11:00-22:30",
+        "panoramax": "8ed51cb3-52be-4dc2-b7d6-f10458dc3f88"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.7004375,
+          28.9982922
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/12814428373",
+      "properties": {
+        "@id": "node/12814428373",
+        "amenity": "cafe",
+        "name": "Toasted"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.7343213,
+          28.9687226
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/12877363061",
+      "properties": {
+        "@id": "node/12877363061",
+        "addr:city": "Hapur",
+        "addr:district": "Hapur",
+        "addr:housenumber": "Khasra no. 782",
+        "addr:postcode": "245101",
+        "addr:street": "Dheerkhera Industrial Area, Meerut Rd, Hapur, धीर्खेड़ा,",
+        "air_conditioning": "yes",
+        "amenity": "restaurant",
+        "cuisine": "indian;south_indian;chinese;italian;asian;tea;coffee_shop;ice_cream;pizza",
+        "diet:vegetarian": "yes",
+        "name": "Verdant by MR Hospitality",
+        "opening_hours": "Mo-Su 09:00-23:00",
+        "outdoor_seating": "yes",
+        "phone": "+919634556068",
+        "smoking": "isolated"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.7639342,
+          28.7719987
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/12966384227",
+      "properties": {
+        "@id": "node/12966384227",
+        "amenity": "fast_food",
+        "email": "customercare@bikanervala.com",
+        "level": "0;1",
+        "name": "Bikanervala",
+        "name:hi": "बीकानेरवाला",
+        "opening_hours": "Mo-Su 08:00-23:00",
+        "panoramax": "e8334224-b95c-42cc-ab06-e4b6f13beed1",
+        "panoramax:0": "6e04d0f7-c805-4cee-8989-a4ac277efde8",
+        "panoramax:1": "1eca011c-f10c-44ed-95bc-854eb0fbde5e",
+        "panoramax:2": "5015f79a-529c-4f46-968a-956e08a112b3",
+        "panoramax:3": "518a12b2-5638-4a71-997e-99c72c122232",
+        "panoramax:4": "2882482b-819f-42bf-b322-21c6be4d1f5c",
+        "panoramax:5": "65863f3c-001d-4b05-921d-5c35d889b933",
+        "panoramax:6": "9afb6cb6-b892-4b3e-ba1f-47c7eaf1d973",
+        "panoramax:7": "b8433ea6-3ffd-4d9c-8080-73338873e11e",
+        "panoramax:8": "16f3aceb-6d94-4158-9a67-b072b9b9b074",
+        "payment:cards": "yes",
+        "payment:cash": "yes",
+        "payment:qr_code": "yes",
+        "phone": "+91 11 4700 6735",
+        "toilets": "yes",
+        "toilets:access": "customers",
+        "toilets:fee": "no",
+        "toilets:gender_segregated": "yes",
+        "toilets:panoramax": "58f916a4-8f6a-4065-98ea-269b88f859b7",
+        "toilets:wheelchair": "no",
+        "website": "https://bikanervala.com/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.7446804,
+          28.9625307
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/13097856990",
+      "properties": {
+        "@id": "node/13097856990",
+        "amenity": "restaurant",
+        "name": "Hong's Kitchen"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.7291676,
+          28.9633379
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/13725127392",
+      "properties": {
+        "@id": "node/13725127392",
+        "amenity": "restaurant",
+        "name": "City Heartz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.7227316,
+          28.9702506
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/13725128250",
+      "properties": {
+        "@id": "node/13725128250",
+        "amenity": "fast_food",
+        "name": "Om Chole Bhature"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.7220801,
+          28.9700451
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/13725170433",
+      "properties": {
+        "@id": "node/13725170433",
+        "amenity": "fast_food",
+        "name": "Gulati 999"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.721467,
+          28.9703053
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/13725172170",
+      "properties": {
+        "@id": "node/13725172170",
+        "amenity": "restaurant",
+        "check_date": "2026-04-12",
+        "diet:vegetarian": "yes",
+        "name": "Shuddh Shakahari Bhojanalay"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.7225911,
+          28.9697565
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/13725172177",
+      "properties": {
+        "@id": "node/13725172177",
+        "amenity": "restaurant",
+        "check_date": "2026-04-12",
+        "name": "Satguru Shuddh Bhojanalay"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.7219438,
+          28.9700237
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/13725191350",
+      "properties": {
+        "@id": "node/13725191350",
+        "amenity": "fast_food",
+        "name": "My Kitchen"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.7218699,
+          28.9701398
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/13725199960",
+      "properties": {
+        "@id": "node/13725199960",
+        "amenity": "restaurant",
+        "check_date": "2026-04-12",
+        "name": "Model Shop (BYOB)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.7216598,
+          28.9701119
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/13725202631",
+      "properties": {
+        "@id": "node/13725202631",
+        "amenity": "restaurant",
+        "level": "2",
+        "name": "Fiesta"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.7230272,
+          28.9701764
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/13725208607",
+      "properties": {
+        "@id": "node/13725208607",
+        "amenity": "fast_food",
+        "name": "Shri Amarnath Bhoj and Guesthouse"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.7219605,
+          28.9701017
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/13725219632",
+      "properties": {
+        "@id": "node/13725219632",
+        "amenity": "restaurant",
+        "check_date": "2026-04-12",
+        "name": "Spl Chhole Bhature"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.7216848,
+          28.9705517
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/13725219633",
+      "properties": {
+        "@id": "node/13725219633",
+        "amenity": "restaurant",
+        "check_date": "2026-04-12",
+        "name": "Siddhivinayak Bhojanalay"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.7216585,
+          28.9705494
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/13725226992",
+      "properties": {
+        "@id": "node/13725226992",
+        "amenity": "fast_food",
+        "name": "Chaap Adda"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.7231417,
+          28.9695987
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/13725987333",
+      "properties": {
+        "@id": "node/13725987333",
+        "air_conditioning": "yes",
+        "amenity": "fast_food",
+        "cuisine": "south_indian;indian",
+        "indoor_seating": "yes",
+        "internet_access:fee": "no",
+        "level": "0",
+        "name": "Ramesh Ji Madrasi Dosa",
+        "name:en": "Ramesh Ji Madrasi Dosa",
+        "name:hi": "रमेश जी मदरासी डोसा",
+        "opening_hours": "PH, Mo-Su 10:30-22:30",
+        "outdoor_seating": "yes",
+        "panoramax": "5faf3da0-9955-443b-8362-f010099cb595",
+        "start_date": "1988",
+        "takeaway": "yes",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.7066157,
+          28.9847462
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/13798168780",
+      "properties": {
+        "@id": "node/13798168780",
+        "air_conditioning": "yes",
+        "amenity": "fast_food",
+        "check_date": "2026-05-05",
+        "cuisine": "indian;tea",
+        "diet:vegetarian": "yes",
+        "image:menu": "a0299f97-a5db-4f53-8f07-eff52e6d1b2b",
+        "image:menu:0": "9be65bc7-0990-4793-bc4e-eff4cc1ca2e8",
+        "image:menu:1": "7b49e811-ba85-49cb-9fe1-250682cc0959",
+        "image:menu:2": "891dd26a-2585-49e6-8ba1-e14cbf8867fa",
+        "internet_access": "no",
+        "level": "0",
+        "name": "Anupam Fast Food Center",
+        "name:en": "Anupam Fast Food Center",
+        "panoramax": "f342c945-d4e8-4415-b6c7-f043646395a4",
+        "panoramax:0": "ece48164-be88-4872-9eda-8eda49ae9082",
+        "panoramax:1": "5f5bbf76-ea9b-4569-9d61-4eef34a77c27",
+        "panoramax:2": "b9189b8c-87f1-4ccc-9ec3-340fa85c6350",
+        "panoramax:3": "0eb57d14-2760-48e2-a5f0-77c4241a2eae",
+        "panoramax:4": "cada71c3-b03b-4fe1-85d4-b0ad1d516a55",
+        "panoramax:5": "786e3862-588b-47d2-984d-759b08bbb960",
+        "phone": "+91 121 257 6875",
+        "toilets": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.7070795,
+          29.0490637
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/13850403294",
+      "properties": {
+        "@id": "node/13850403294",
+        "amenity": "fast_food",
+        "brand": "Subway",
+        "cuisine": "sandwich",
+        "level": "0",
+        "name": "Subway",
+        "takeaway": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.7459492,
+          29.0076459
+        ]
+      }
+    }
+  ]
+}
