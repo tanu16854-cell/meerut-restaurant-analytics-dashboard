@@ -1,4 +1,3 @@
-
 import json
 from pathlib import Path
 
@@ -97,14 +96,8 @@ def load_restaurants(file_path, modified_time):
             "Address": ", ".join(address_parts),
             "Latitude": latitude,
             "Longitude": longitude,
-            "Phone": tags.get(
-                "phone",
-                tags.get("contact:phone", ""),
-            ),
-            "Website": tags.get(
-                "website",
-                tags.get("contact:website", ""),
-            ),
+            "Phone": tags.get("phone", tags.get("contact:phone", "")),
+            "Website": tags.get("website", tags.get("contact:website", "")),
             "Opening Hours": tags.get("opening_hours", "Not listed"),
             "Brand": tags.get("brand", ""),
             "OSM ID": tags.get("@id", ""),
@@ -124,25 +117,41 @@ def load_restaurants(file_path, modified_time):
 
 st.markdown("""
 <style>
-    /* Follow the active Streamlit theme */
     .stApp {
         background-color: var(--background-color);
         color: var(--text-color);
     }
 
     .block-container {
-        padding-top: 1.5rem;
-        padding-bottom: 2rem;
+        max-width: 1500px;
+        padding-top: 1.8rem;
+        padding-bottom: 3rem;
     }
 
-    /* KPI cards */
+    h1 {
+        font-weight: 750 !important;
+        letter-spacing: -0.8px;
+        padding-bottom: 0.35rem;
+    }
+
+    h2, h3 {
+        font-weight: 650 !important;
+        letter-spacing: -0.3px;
+    }
+
     [data-testid="stMetric"] {
-        background-color: var(--secondary-background-color);
-        color: var(--text-color);
-        padding: 16px;
-        border-radius: 12px;
-        border: 1px solid var(--text-color);
-        border-opacity: 0.15;
+        background: var(--secondary-background-color);
+        border: 1px solid rgba(128, 128, 128, 0.25);
+        border-radius: 14px;
+        padding: 18px 20px;
+        min-height: 112px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    [data-testid="stMetric"]:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 5px 16px rgba(0, 0, 0, 0.08);
     }
 
     [data-testid="stMetricLabel"],
@@ -153,15 +162,63 @@ st.markdown("""
         color: var(--text-color) !important;
     }
 
-    /* Keep input controls theme-compatible */
-    [data-testid="stTextInput"] input,
-    [data-testid="stMultiSelect"] input {
+    [data-testid="stMetricLabel"] p {
+        font-size: 0.9rem;
+        font-weight: 550;
+    }
+
+    [data-testid="stMetricValue"] {
+        font-weight: 750;
+    }
+
+    [data-testid="stSidebar"] {
+        border-right: 1px solid rgba(128, 128, 128, 0.18);
+    }
+
+    [data-testid="stTextInput"] input {
+        border-radius: 9px;
         color: var(--text-color);
     }
 
-    /* Charts and tables keep their default theme styling */
-    h1, h2, h3 {
-        color: var(--text-color);
+    [data-testid="stPlotlyChart"],
+    [data-testid="stDataFrame"] {
+        border-radius: 12px;
+    }
+
+    [data-testid="stAlert"] {
+        border-radius: 10px;
+    }
+
+    div.stDownloadButton > button,
+    div.stButton > button {
+        border-radius: 9px;
+        font-weight: 600;
+        transition: all 0.2s ease;
+    }
+
+    div.stDownloadButton > button:hover,
+    div.stButton > button:hover {
+        transform: translateY(-1px);
+    }
+
+    @media (max-width: 768px) {
+        .block-container {
+            padding-top: 1rem;
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+
+        [data-testid="stMetric"] {
+            padding: 12px;
+            min-height: 95px;
+        }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        *, *::before, *::after {
+            transition: none !important;
+            transform: none !important;
+        }
     }
 </style>
 """, unsafe_allow_html=True)
@@ -170,9 +227,9 @@ st.markdown("""
 # -------------------- Page heading --------------------
 
 st.title("🍽️ Meerut Restaurant Analytics")
-
 st.markdown(
-    "Explore mapped restaurants, locations, cuisines and available details."
+    "Explore mapped places, compare locations, and analyse available "
+    "restaurant information."
 )
 
 
@@ -198,17 +255,16 @@ if df.empty:
     st.warning("No named places were found in the GeoJSON file.")
     st.stop()
 
-st.info(
-    "Source: OpenStreetMap contributors. These mapped records are not "
-    "a verified complete list of Meerut restaurants. Ratings, reviews "
-    "and prices are not included in this dataset."
+st.caption(
+    "Data source: OpenStreetMap contributors. Records may be incomplete "
+    "or outdated; this is not a verified complete list of restaurants."
 )
 
 
 # -------------------- Sidebar filters --------------------
 
 st.sidebar.title("🎛️ Dashboard Filters")
-st.sidebar.caption("Choose filters to explore available records.")
+st.sidebar.caption("Choose filters to explore the available records.")
 
 locations = sorted(df["Location"].dropna().unique().tolist())
 cuisines = sorted(df["Cuisine"].dropna().unique().tolist())
@@ -218,21 +274,37 @@ selected_locations = st.sidebar.multiselect(
     "Location",
     locations,
     default=locations,
+    key="filter_locations",
 )
 
 selected_cuisines = st.sidebar.multiselect(
     "Cuisine",
     cuisines,
     default=cuisines,
+    key="filter_cuisines",
 )
 
 selected_types = st.sidebar.multiselect(
     "Restaurant type",
     types,
     default=types,
+    key="filter_types",
 )
 
-search_text = st.sidebar.text_input("Search restaurant name")
+search_text = st.sidebar.text_input(
+    "Search restaurant name",
+    key="search_restaurant",
+)
+
+if st.sidebar.button("Reset filters", use_container_width=True):
+    for key in (
+        "filter_locations",
+        "filter_cuisines",
+        "filter_types",
+        "search_restaurant",
+    ):
+        st.session_state.pop(key, None)
+    st.rerun()
 
 filtered = df[
     df["Location"].isin(selected_locations)
@@ -246,11 +318,9 @@ if search_text.strip():
             search_text.strip(),
             case=False,
             na=False,
+            regex=False,
         )
     ]
-
-if st.sidebar.button("Reset filters", use_container_width=True):
-    st.rerun()
 
 
 # -------------------- KPI cards --------------------
@@ -267,23 +337,45 @@ with_phone = int(
 
 with_cuisine = int(filtered["Cuisine"].ne("Not listed").sum())
 
+with_address = int(
+    filtered["Address"].fillna("").astype(str).str.strip().ne("").sum()
+)
+
+with_website = int(
+    filtered["Website"].fillna("").astype(str).str.strip().ne("").sum()
+)
+
 k1, k2, k3, k4 = st.columns(4)
 
-k1.metric("Mapped Places", total)
+k1.metric("Mapped Places", f"{total:,}")
 k2.metric("Restaurant Types", filtered["Restaurant Type"].nunique())
-k3.metric("With Coordinates", with_coordinates)
-k4.metric("With Phone Number", with_phone)
+k3.metric(
+    "With Coordinates",
+    f"{with_coordinates:,}",
+    delta=f"{with_coordinates / total:.0%} coverage" if total else None,
+)
+k4.metric(
+    "With Phone Number",
+    f"{with_phone:,}",
+    delta=f"{with_phone / total:.0%} coverage" if total else None,
+)
 
 st.divider()
 
 if filtered.empty:
-    st.warning("No places match the selected filters. Try widening your search.")
+    st.warning(
+        "No places match the selected filters. Try widening your search."
+    )
     st.stop()
 
 
-# -------------------- Overview charts --------------------
+# -------------------- Overview --------------------
 
 st.subheader("📈 Restaurant Overview")
+st.caption(
+    f"Analysing {total:,} mapped places across "
+    f"{filtered['Location'].nunique():,} listed locations."
+)
 
 left, right = st.columns(2)
 
@@ -295,19 +387,33 @@ with left:
         .reset_index(name="Places")
     )
 
+    type_counts["Share"] = (
+        type_counts["Places"] / type_counts["Places"].sum() * 100
+    ).round(1)
+
+    type_counts["Label"] = (
+        type_counts["Places"].astype(str)
+        + " ("
+        + type_counts["Share"].astype(str)
+        + "%)"
+    )
+
     fig = px.bar(
-        type_counts,
+        type_counts.sort_values("Places"),
         x="Restaurant Type",
         y="Places",
         title="Mapped Places by Type",
-        text="Places",
+        text="Label",
         color="Restaurant Type",
+        hover_data={"Share": ":.1f"},
     )
 
     fig.update_layout(
         xaxis_title="Place Type",
         yaxis_title="Number of Places",
+        showlegend=False,
     )
+    fig.update_traces(textposition="outside", cliponaxis=False)
 
     st.plotly_chart(fig, use_container_width=True)
 
@@ -320,6 +426,10 @@ with right:
         .reset_index(name="Places")
     )
 
+    cuisine_counts["Share"] = (
+        cuisine_counts["Places"] / total * 100
+    ).round(1)
+
     fig = px.bar(
         cuisine_counts.sort_values("Places"),
         x="Places",
@@ -327,44 +437,53 @@ with right:
         orientation="h",
         title="Most Common Listed Cuisines",
         text="Places",
+        hover_data={"Share": ":.1f"},
     )
+
+    fig.update_layout(
+        xaxis_title="Number of Places",
+        yaxis_title="",
+    )
+    fig.update_traces(textposition="outside", cliponaxis=False)
 
     st.plotly_chart(fig, use_container_width=True)
 
 
-# -------------------- Location-wise analysis --------------------
+# -------------------- Location analysis --------------------
 
 st.subheader("📊 Location-wise Analysis")
 
 location_summary = (
     filtered.groupby("Location", as_index=False)
     .agg(
-        Restaurants=("Restaurant Name", "count"),
+        Places=("Restaurant Name", "count"),
         Types=("Restaurant Type", "nunique"),
         Cuisines=("Cuisine", "nunique"),
+        WithCoordinates=("Latitude", "count"),
     )
-    .sort_values("Restaurants", ascending=False)
+    .sort_values("Places", ascending=False)
 )
 
 left, right = st.columns(2)
 
 with left:
     fig = px.bar(
-        location_summary.sort_values("Restaurants"),
-        x="Restaurants",
+        location_summary.head(20).sort_values("Places"),
+        x="Places",
         y="Location",
         orientation="h",
-        title="Mapped Places by Location",
-        text="Restaurants",
-        color="Restaurants",
+        title="Top 20 Listed Locations",
+        text="Places",
+        color="Places",
         color_continuous_scale="Blues",
+        hover_data=["Types", "Cuisines", "WithCoordinates"],
     )
 
     fig.update_layout(
         yaxis_title="",
         xaxis_title="Number of Mapped Places",
+        coloraxis_showscale=False,
     )
-
     st.plotly_chart(fig, use_container_width=True)
 
 with right:
@@ -372,13 +491,15 @@ with right:
         location_summary,
         x="Types",
         y="Cuisines",
-        size="Restaurants",
+        size="Places",
         hover_name="Location",
         title="Location Diversity",
         labels={
             "Types": "Different Place Types",
             "Cuisines": "Different Cuisine Labels",
+            "Places": "Mapped Places",
         },
+        hover_data=["Places", "WithCoordinates"],
     )
 
     st.plotly_chart(fig, use_container_width=True)
@@ -388,24 +509,64 @@ with right:
 
 st.subheader("🧹 Data Quality")
 
-q1, q2, q3 = st.columns(3)
+q1, q2, q3, q4 = st.columns(4)
 
-q1.metric("Places with Coordinates", with_coordinates)
-q2.metric("Places with Cuisine Listed", with_cuisine)
-
-with_address = int(
-    filtered["Address"].fillna("").str.strip().ne("").sum()
+q1.metric(
+    "Coordinates Available",
+    f"{with_coordinates:,}",
+    delta=f"{with_coordinates / total:.0%}" if total else None,
+)
+q2.metric(
+    "Cuisine Listed",
+    f"{with_cuisine:,}",
+    delta=f"{with_cuisine / total:.0%}" if total else None,
+)
+q3.metric(
+    "Address Listed",
+    f"{with_address:,}",
+    delta=f"{with_address / total:.0%}" if total else None,
+)
+q4.metric(
+    "Website Listed",
+    f"{with_website:,}",
+    delta=f"{with_website / total:.0%}" if total else None,
 )
 
-q3.metric("Places with Address Listed", with_address)
+quality_df = pd.DataFrame({
+    "Field": ["Coordinates", "Phone", "Cuisine", "Address", "Website"],
+    "Available": [
+        with_coordinates,
+        with_phone,
+        with_cuisine,
+        with_address,
+        with_website,
+    ],
+})
+
+quality_df["Missing"] = total - quality_df["Available"]
+quality_df["Coverage (%)"] = (
+    quality_df["Available"] / total * 100
+).round(1)
+
+fig = px.bar(
+    quality_df,
+    x="Field",
+    y="Coverage (%)",
+    title="Information Coverage by Field",
+    text="Coverage (%)",
+    range_y=[0, 100],
+)
+
+fig.update_traces(texttemplate="%{text:.1f}%", textposition="outside")
+st.plotly_chart(fig, use_container_width=True)
 
 st.caption(
-    "These figures describe the loaded OpenStreetMap records. "
-    "They do not measure every restaurant operating in Meerut."
+    "Coverage measures completeness of the loaded OpenStreetMap records. "
+    "Missing information does not necessarily mean the business is closed."
 )
 
 
-# -------------------- Map --------------------
+# -------------------- Interactive map and selected details --------------------
 
 st.subheader("📍 Restaurant Locations")
 
@@ -413,17 +574,85 @@ map_data = filtered.dropna(
     subset=["Latitude", "Longitude"]
 ).copy()
 
+map_data = map_data[
+    map_data["Latitude"].between(-90, 90)
+    & map_data["Longitude"].between(-180, 180)
+]
+
 if not map_data.empty:
-    map_data = map_data.rename(
-        columns={
-            "Latitude": "latitude",
-            "Longitude": "longitude",
-        }
+    fig_map = px.scatter_map(
+        map_data,
+        lat="Latitude",
+        lon="Longitude",
+        color="Restaurant Type",
+        hover_name="Restaurant Name",
+        hover_data={
+            "Location": True,
+            "Cuisine": True,
+            "Address": True,
+            "Latitude": False,
+            "Longitude": False,
+        },
+        zoom=10,
+        height=520,
+        title="Mapped Places in the Selected Results",
     )
 
-    st.map(map_data[["latitude", "longitude"]])
+    fig_map.update_layout(
+        map_style="open-street-map",
+        margin={"r": 0, "t": 50, "l": 0, "b": 0},
+        legend_title_text="Place Type",
+    )
+
+    st.plotly_chart(fig_map, use_container_width=True)
+
+    st.caption(
+        "Map positions are based on available OpenStreetMap coordinates. "
+        "Some records may represent a building or approximate location."
+    )
+
+    st.markdown("#### View a place's details")
+
+    place_names = sorted(map_data["Restaurant Name"].unique().tolist())
+
+    selected_place = st.selectbox(
+        "Choose a mapped place",
+        place_names,
+        key="selected_place_details",
+    )
+
+    place_rows = map_data[
+        map_data["Restaurant Name"] == selected_place
+    ]
+
+    if not place_rows.empty:
+        place = place_rows.iloc[0]
+
+        d1, d2 = st.columns(2)
+
+        with d1:
+            st.markdown(f"**{place['Restaurant Name']}**")
+            st.write(f"Type: {place['Restaurant Type']}")
+            st.write(f"Cuisine: {place['Cuisine']}")
+            st.write(f"Location: {place['Location']}")
+            st.write(f"Address: {place['Address'] or 'Not listed'}")
+
+        with d2:
+            st.write(f"Phone: {place['Phone'] or 'Not listed'}")
+            st.write(f"Opening hours: {place['Opening Hours'] or 'Not listed'}")
+
+            website = str(place["Website"]).strip()
+            if website:
+                st.write(f"Website: {website}")
+            else:
+                st.write("Website: Not listed")
+
+            st.write(
+                f"Coordinates: {place['Latitude']:.5f}, "
+                f"{place['Longitude']:.5f}"
+            )
 else:
-    st.info("No usable coordinates are available for these places.")
+    st.info("No usable coordinates are available for the selected places.")
 
 
 # -------------------- Restaurant directory --------------------
@@ -442,34 +671,65 @@ display_columns = [
     "Brand",
 ]
 
+with st.expander("Directory display options", expanded=False):
+    show_osm_id = st.checkbox("Include OpenStreetMap ID in the table")
+
+if show_osm_id:
+    display_columns.append("OSM ID")
+
+directory = filtered[display_columns].sort_values("Restaurant Name")
+
 st.dataframe(
-    filtered[display_columns].sort_values("Restaurant Name"),
+    directory,
     use_container_width=True,
     hide_index=True,
 )
 
 st.caption(
-    f"Showing {len(filtered)} mapped records after applying filters."
+    f"Showing {len(filtered):,} mapped records after applying filters."
 )
 
 
-# -------------------- CSV download --------------------
+# -------------------- CSV and JSON downloads --------------------
 
-csv_data = filtered[display_columns].to_csv(
-    index=False
-).encode("utf-8-sig")
+st.subheader("📥 Export Reports")
 
-st.download_button(
-    label="⬇️ Download Filtered Restaurants (CSV)",
-    data=csv_data,
-    file_name="meerut_restaurants.csv",
-    mime="text/csv",
-)
+csv_data = filtered[display_columns].to_csv(index=False).encode("utf-8-sig")
+
+json_data = filtered[display_columns].to_json(
+    orient="records",
+    force_ascii=False,
+    indent=2,
+).encode("utf-8")
+
+export1, export2 = st.columns(2)
+
+with export1:
+    st.download_button(
+        label="⬇️ Download CSV Report",
+        data=csv_data,
+        file_name="meerut_restaurants.csv",
+        mime="text/csv",
+        use_container_width=True,
+    )
+
+with export2:
+    st.download_button(
+        label="⬇️ Download JSON Report",
+        data=json_data,
+        file_name="meerut_restaurants.json",
+        mime="application/json",
+        use_container_width=True,
+    )
+
+
+# -------------------- Footer --------------------
 
 st.divider()
 
 st.caption(
     "Data source: © OpenStreetMap contributors. "
     "OpenStreetMap data is available under the Open Database License (ODbL). "
-    "Business details may be incomplete or outdated."
+    "Business details may be incomplete or outdated. Ratings, reviews and "
+    "prices are not included in this dataset."
 )
