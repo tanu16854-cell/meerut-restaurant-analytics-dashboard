@@ -131,12 +131,10 @@ st.markdown("""
     h1 {
         font-weight: 750 !important;
         letter-spacing: -0.8px;
-        padding-bottom: 0.35rem;
     }
 
     h2, h3 {
         font-weight: 650 !important;
-        letter-spacing: -0.3px;
     }
 
     [data-testid="stMetric"] {
@@ -146,12 +144,6 @@ st.markdown("""
         padding: 18px 20px;
         min-height: 112px;
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
-        transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
-
-    [data-testid="stMetric"]:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 5px 16px rgba(0, 0, 0, 0.08);
     }
 
     [data-testid="stMetricLabel"],
@@ -162,22 +154,13 @@ st.markdown("""
         color: var(--text-color) !important;
     }
 
-    [data-testid="stMetricLabel"] p {
-        font-size: 0.9rem;
-        font-weight: 550;
-    }
-
-    [data-testid="stMetricValue"] {
-        font-weight: 750;
-    }
-
     [data-testid="stSidebar"] {
         border-right: 1px solid rgba(128, 128, 128, 0.18);
     }
 
     [data-testid="stTextInput"] input {
-        border-radius: 9px;
         color: var(--text-color);
+        border-radius: 9px;
     }
 
     [data-testid="stPlotlyChart"],
@@ -193,12 +176,6 @@ st.markdown("""
     div.stButton > button {
         border-radius: 9px;
         font-weight: 600;
-        transition: all 0.2s ease;
-    }
-
-    div.stDownloadButton > button:hover,
-    div.stButton > button:hover {
-        transform: translateY(-1px);
     }
 
     @media (max-width: 768px) {
@@ -213,13 +190,6 @@ st.markdown("""
             min-height: 95px;
         }
     }
-
-    @media (prefers-reduced-motion: reduce) {
-        *, *::before, *::after {
-            transition: none !important;
-            transform: none !important;
-        }
-    }
 </style>
 """, unsafe_allow_html=True)
 
@@ -228,8 +198,7 @@ st.markdown("""
 
 st.title("🍽️ Meerut Restaurant Analytics")
 st.markdown(
-    "Explore mapped places, compare locations, and analyse available "
-    "restaurant information."
+    "Explore mapped places, compare locations, and analyse available details."
 )
 
 
@@ -237,9 +206,6 @@ st.markdown(
 
 if not DATA_FILE.exists():
     st.error(f"Restaurant data file not found: {DATA_FILE}")
-    st.info(
-        "Place meerut_restaurants.geojson inside the project's data folder."
-    )
     st.stop()
 
 try:
@@ -256,8 +222,8 @@ if df.empty:
     st.stop()
 
 st.caption(
-    "Data source: OpenStreetMap contributors. Records may be incomplete "
-    "or outdated; this is not a verified complete list of restaurants."
+    "Source: OpenStreetMap contributors. Records may be incomplete or "
+    "outdated and are not a verified complete list of Meerut restaurants."
 )
 
 
@@ -363,13 +329,11 @@ k4.metric(
 st.divider()
 
 if filtered.empty:
-    st.warning(
-        "No places match the selected filters. Try widening your search."
-    )
+    st.warning("No places match your filters. Try resetting the filters.")
     st.stop()
 
 
-# -------------------- Overview --------------------
+# -------------------- Restaurant overview --------------------
 
 st.subheader("📈 Restaurant Overview")
 st.caption(
@@ -561,12 +525,12 @@ fig.update_traces(texttemplate="%{text:.1f}%", textposition="outside")
 st.plotly_chart(fig, use_container_width=True)
 
 st.caption(
-    "Coverage measures completeness of the loaded OpenStreetMap records. "
-    "Missing information does not necessarily mean the business is closed."
+    "Coverage describes the available records, not every restaurant operating "
+    "in Meerut."
 )
 
 
-# -------------------- Interactive map and selected details --------------------
+# -------------------- Interactive map --------------------
 
 st.subheader("📍 Restaurant Locations")
 
@@ -580,36 +544,41 @@ map_data = map_data[
 ]
 
 if not map_data.empty:
-    fig_map = px.scatter_map(
-        map_data,
-        lat="Latitude",
-        lon="Longitude",
-        color="Restaurant Type",
-        hover_name="Restaurant Name",
-        hover_data={
-            "Location": True,
-            "Cuisine": True,
-            "Address": True,
-            "Latitude": False,
-            "Longitude": False,
-        },
-        zoom=10,
-        height=520,
-        title="Mapped Places in the Selected Results",
-    )
+    st.caption(f"Showing {len(map_data):,} places with valid coordinates.")
 
-    fig_map.update_layout(
-        map_style="open-street-map",
-        margin={"r": 0, "t": 50, "l": 0, "b": 0},
-        legend_title_text="Place Type",
-    )
+    try:
+        fig_map = px.scatter_map(
+    map_data,
+    lat="Latitude",
+    lon="Longitude",
+    color="Restaurant Type",
+    hover_name="Restaurant Name",
+    hover_data={
+        "Location": True,
+        "Cuisine": True,
+        "Address": True,
+        "Latitude": False,
+        "Longitude": False,
+    },
+    zoom=11,
+    center={"lat": 28.9845, "lon": 77.7064},
+    height=520,
+    map_style="open-street-map",
+    title="Restaurant Locations in Meerut",
+)
+        fig_map.update_layout(
+            margin={"r": 0, "t": 50, "l": 0, "b": 0},
+            legend_title_text="Place Type",
+        )
 
-    st.plotly_chart(fig_map, use_container_width=True)
+        st.plotly_chart(
+            fig_map,
+            use_container_width=True,
+            key="restaurant_location_map",
+        )
 
-    st.caption(
-        "Map positions are based on available OpenStreetMap coordinates. "
-        "Some records may represent a building or approximate location."
-    )
+    except (ValueError, TypeError, KeyError, AttributeError) as error:
+        st.error(f"Could not render the map: {error}")
 
     st.markdown("#### View a place's details")
 
@@ -639,7 +608,9 @@ if not map_data.empty:
 
         with d2:
             st.write(f"Phone: {place['Phone'] or 'Not listed'}")
-            st.write(f"Opening hours: {place['Opening Hours'] or 'Not listed'}")
+            st.write(
+                f"Opening hours: {place['Opening Hours'] or 'Not listed'}"
+            )
 
             website = str(place["Website"]).strip()
             if website:
@@ -652,7 +623,8 @@ if not map_data.empty:
                 f"{place['Longitude']:.5f}"
             )
 else:
-    st.info("No usable coordinates are available for the selected places.")
+    st.warning("No valid coordinates found for the selected filters.")
+    st.info("Try selecting more locations or resetting the filters.")
 
 
 # -------------------- Restaurant directory --------------------
@@ -685,12 +657,10 @@ st.dataframe(
     hide_index=True,
 )
 
-st.caption(
-    f"Showing {len(filtered):,} mapped records after applying filters."
-)
+st.caption(f"Showing {len(filtered):,} mapped records after filtering.")
 
 
-# -------------------- CSV and JSON downloads --------------------
+# -------------------- CSV and JSON exports --------------------
 
 st.subheader("📥 Export Reports")
 
